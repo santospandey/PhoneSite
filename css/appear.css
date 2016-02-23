@@ -1,0 +1,38 @@
+.apperance{
+  padding-left: 20px;
+  background-color: skyblue;
+}
+
+.apperance span{
+  margin:0 auto;
+  font-size: 16px;
+}
+
+.apperance p{
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+
+.top{
+  padding-bottom: 30px;
+}
+
+.phone{
+  list-style: none;
+}
+
+.content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.picture{
+  width: 30px;
+  height: 30px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  display: block;
+}

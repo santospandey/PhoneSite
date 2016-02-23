@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Phones lists</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+
+  <body ng-app="phonecatApp">
+    <div class="apperance" ng-controller="PhoneListCtrl">
+      <div class="top">
+        <h1> The list of mobiles </h1>
+        </br>
+        </br>
+        Search:<input type="text" ng-model="query"></input>
+        Sortby:
+        <select ng-model="orderProp">
+          <option value="age">Newest</option>
+          <option value="name">Alphabetical</option>
+        </select>
+      </div>
+      <ul class="phone">
+        <li class="content" ng-repeat="phone in phones|filter:query|orderBy:orderProp">
+          <a href="#/phones/{{phone.id}}"><img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}"></a></span>
+          <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+          <p >{{phone.snippet}}</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <link rel="stylesheet" type="text/css" href="css/reset.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/appear.css"></link>
+</html>
