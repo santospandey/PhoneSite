@@ -1,1 +1,10 @@
 the new file is added to the project
+
+///////////////////////////////////
+
+again the text is added here.
+
+
+///////////////////////////////////
+
+again the text is added in the branch.
